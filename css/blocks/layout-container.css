@@ -1,0 +1,12 @@
+/*TODO: padding px or rem*/
+.layout-container {
+  overflow: visible;
+  padding: 0 2.4rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 481px) {
+  .layout-container {
+    padding: 0 3.2rem;
+  }
+}

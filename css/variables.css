@@ -2,4 +2,17 @@
   --bs-font-sans-serif: system-ui, -apple-system, 'Segoe UI', Roboto,
     'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-open-sans: 'Open Sans', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+  --font-raleway: 'Raleway', sans-serif;
+
+  --color-cocoa: #caa892;
+  --color-grass: #37806b;
+  --color-sugar-plum-sapphire: #28ae97;
+  --color-coffe: #b0855b;
+  --color-grey: #f8f8f8;
+  --color-line-primary: #c4c4c4;
+  --color-input: #eeeeee;
+  --color-text-primary: #646464;
+  --color-text-secondary: #212121;
 }

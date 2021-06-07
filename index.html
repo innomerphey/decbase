@@ -16,17 +16,564 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
+  <!--region fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@600&family=Raleway:wght@500&display=swap"
+    rel="stylesheet">
+  <!--endregion-->
+
+  <!--region styles-->
   <link rel="stylesheet" href="css/vendor/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <!--endregion-->
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
 
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+<body class="page">
+
+<div class="hidden">
+  <!--region header-->
+  <header class="header page__header">
+
+    <!--region logo-->
+    <picture>
+      <source srcset="img/logo/logo.webp 1x,
+       img/logo/logo@1.5x.webp 1.5x, img/logo/logo@2x.webp 2x"
+              type="image/webp">
+      <img src="img/logo/logo.png"
+           srcset="img/logo/logo.png 1x, img/logo/logo@1.5x.png 1.5x,
+          img/logo/logo@2x.png 2x"
+           alt="logo" width="151" height="47">
+    </picture>
+    <!--endregion-->
+
+    <!--region nav-->
+    <nav class="nav header__nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="#">home</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">project</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">services</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">about</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">blog</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">shop</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">contact</a></li>
+      </ul>
+
+      <div>
+        <a class="link link--theme--main link--size--s link--color--cocoa" href="#">Sign Up</a>
+      </div>
+    </nav>
+    <!--endregion-->
+
+  </header>
+  <!--endregion-->
+</div>
+<!--region main-->
+<main>
+
+  <div class="layout-container">
+    <!--region hero-->
+    <section class="hero page__hero">
+      <div class="hero__body">
+        <header>
+          <p class="hero__subtitle">modern interior</p>
+          <h1 class="hero__title">Create Your
+            <wbr>
+            Interior Design.
+          </h1>
+        </header>
+        <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation.</p>
+        <button class="button--theme--main hero__button" type="button">contact</button>
+      </div>
+      <div class="hero__image-container">
+        <div class="bordered-image bordered-image--right">
+          <picture>
+            <source sizes="calc(100vw - 48px - 15px)"
+                    srcset="img/hero/hero-354.webp 354w, img/hero/hero-708.webp 708w,
+                                img/hero/hero-1062.webp 1062w, img/hero/hero-1416.webp 1416w,
+                                img/hero/hero-1770.webp 1770w"
+                    type="image/webp">
+            <img class="bordered-image__image"
+                 srcset="img/hero/hero-354.jpg 354w, img/hero/hero-708.jpg 708w,
+                     img/hero/hero-1062.jpg 1062w, img/hero/hero-1416.jpg 1416w,
+                     img/hero/hero-1770.jpg 1770w"
+                 sizes="calc(100vw - 48px - 15px)"
+                 src="img/hero/hero-1062.jpg"
+                 alt="modern interior"
+                 decoding="async"
+                 loading="lazy"
+            >
+          </picture>
+        </div>
+      </div>
+    </section>
+    <!--endregion-->
+  </div>
+
+
+  <div class="hidden">
+    <!--region service-->
+    <section class="service page__service">
+
+      <!--region service-body-->
+      <div class="service__body">
+        <header>
+          <p class="service__subtitle subtitle">what we do</p>
+          <h2 class="service__title">Our Service</h2>
+        </header>
+
+        <!--region slider-menu-->
+        <div class="service__slider-menu">
+          <button class="button--theme--circled" type="button">
+            <svg class="button__icon" width="8" height="10" viewBox="0 0 8 10" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 1L2 5L6 9" stroke-width="2" />
+            </svg>
+          </button>
+          <button class="button--theme--circled" type="button">
+            <svg class="button__icon" width="8" height="10" viewBox="0 0 8 10" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 1L6 5L2 9" stroke-width="2" />
+            </svg>
+          </button>
+        </div>
+        <!--endregion-->
+
+      </div>
+      <!--endregion-->
+
+      <!--region service-slider-->
+      <div class="service__slider">
+        <article class="card card--size--m service__card">
+          <picture>
+            <source srcset="img/cards/icons/interior.webp 1x,
+                          img/cards/icons/interior@2x.webp 2x"
+                    type="image/webp">
+            <img class="card__icon"
+                 srcset="img/cards/icons/interior.png 1x,
+                       img/cards/icons/interior@2x.png 2x"
+                 src="img/cards/icons/interior.png"
+                 alt="interior">
+          </picture>
+          <div class="card__body">
+            <h3 class="card__title">Interior Design</h3>
+            <p class="card__text">Lorem ipsum dolor amet consectetur
+              adipiscing elit sed eiusmod tempor
+              incididunt ut labore.</p>
+          </div>
+        </article>
+
+        <article class="card card--size--m card--color--cocoa service__card">
+          <picture>
+            <source srcset="img/cards/icons/architecture.webp 1x,
+                          img/cards/icons/architecture@2x.webp 2x"
+                    type="image/webp">
+            <img class="card__icon"
+                 srcset="img/cards/icons/architecture.png 1x,
+                       img/cards/icons/architecture@2x.webp 2x"
+                 src="img/cards/icons/interior.png"
+                 alt="interior">
+          </picture>
+          <div class="card__body">
+            <h3 class="card__title">Interior Design</h3>
+            <p class="card__text">Lorem ipsum dolor amet consectetur
+              adipiscing elit sed eiusmod tempor
+              incididunt ut labore.</p>
+          </div>
+        </article>
+
+        <article class="card card--size--m service__card">
+          <picture>
+            <source srcset="img/cards/icons/planning.webp 1x,
+                          img/cards/icons/planning@2x.webp 2x"
+                    type="image/webp">
+            <img class="card__icon"
+                 srcset="img/cards/icons/planning.png 1x,
+                       img/cards/icons/planning@2x.png 2x"
+                 src="img/cards/icons/interior.png"
+                 alt="interior">
+          </picture>
+          <div class="card__body">
+            <h3 class="card__title">Interior Design</h3>
+            <p class="card__text">Lorem ipsum dolor amet consectetur
+              adipiscing elit sed eiusmod tempor
+              incididunt ut labore.</p>
+          </div>
+        </article>
+      </div>
+      <!--endregion-->
+
+    </section>
+    <!--endregion-->
+
+    <!--region about-->
+    <section class="about page__about">
+      <picture>
+        <source srcset="img/about/about.webp 1x, img/about/about@1.5.webp 1.5x,
+       img/about/about@2x.webp"
+                type="image/webp">
+        <img class="bordered-image__image image--shadow--left about__image"
+             src="img/about/about.jpg"
+             srcset="img/about/about.jpg 1x, img/about/about@1.5x.jpg 1.5x,
+            img/about/about@2x.jpg 2x"
+             width="682"
+             height="727"
+             alt="about us">
+      </picture>
+      <div class="about__body">
+        <header>
+          <p class="about__subtitle subtitle">about us</p>
+          <h2 class="about__title">Interioris The Will
+            of An Epoch Mextreo</h2>
+        </header>
+        <p class="about__text">There are many variations of passages of Lorem Ipsum available,
+          but the majority have suffered alteration in some form injected
+          humour, or randomised words which don't look even slightly
+          believable.If you are going to use a passage of Lorem Ipsum,
+          sure there isn't anything embarrassing hidden the middleof text.
+          All the Lorem Ipsum generators on the Internettend to repeat
+          predefined chunks as necessary,making this the first true
+          generator on the Internet.</p>
+        <a class="link link--theme--main link--size--m link--color--grass" href="#">learn more</a>
+      </div>
+    </section>
+    <!--endregion-->
+
+    <!--region experience-->
+    <section class="experience page__experience">
+      <div class="experience__body">
+        <picture>
+          <source srcset="img/twenty/twenty.webp 1x,
+        img/twenty/twenty@1.5x.webp 1.5x,
+        img/twenty/twenty@2x.webp 2x"
+                  type="image/webp">
+          <img class="experience__years"
+               src="img/twenty/twenty.png"
+               srcset="img/twenty/twenty.png 1x, img/twenty/twenty@1.5x.png 1.5x"
+               width="326"
+               height="211"
+               alt="Twenty">
+        </picture>
+        <h2 class="experience__title">Years Of Successful
+          <br>
+          Working
+          <br>
+          The Market
+        </h2>
+        <a class="link link--theme--main link--color--grass link--size--m" href="#">read more</a>
+      </div>
+      <picture>
+        <source srcset="img/experience/experience.webp 1x,
+      img/experience/experience@1.5x.webp 1.5x,
+      img/experience/experience@2x.webp 2x"
+                type="image/webp">
+        <img class="bordered-image__image image--border--right" src="img/experience/experience.jpg"
+             srcset="img/experience/experience.jpg 1x,
+           img/experience/experience@1.5x.jpg 1.5x,
+           img/experience/experience@2x.jpg 2x"
+             width="682"
+             height="727"
+             alt="Our experience">
+      </picture>
+    </section>
+    <!--endregion-->
+
+    <!--region work-->
+    <div class="page__work">
+      <div class="page__work-inner">
+        <section class="work">
+          <h2 class="work__title title">3000+ Completed Work <br>
+            Which WE have Successfully Done</h2>
+          <div class="work__body">
+            <div class="work__card">
+              <p class="work__card-text">
+                <b class="work__card-number">980</b><br>
+                Projects
+              </p>
+            </div>
+            <div class="work__card work__card--bottom">
+              <p class="work__card-text">
+                <b class="work__card-number">520</b><br>
+                Happy Client
+              </p>
+            </div>
+            <div class="work__card">
+              <p class="work__card-text">
+                <b class="work__card-number">330</b><br>
+                Winners
+              </p>
+            </div>
+            <div class="work__card work__card--bottom">
+              <p class="work__card-text">
+                <b class="work__card-number">120</b><br>
+                Recommend
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!--endregion-->
+
+    <!--region feedback-->
+    <section class="feedback page__feedback">
+      <header class="feedback__header">
+        <p class="feedback__subtitle subtitle">testimonials</p>
+        <h2 class="feedback__title title">Client says about us</h2>
+      </header>
+
+      <!--region feedback slider menu-->
+      <div class="feedback__slider-menu">
+        <button class="button--theme--circled" type="button">
+          <svg class="button__icon" width="8" height="10" viewBox="0 0 8 10" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 1L2 5L6 9" stroke-width="2" />
+          </svg>
+        </button>
+        <button class="button--theme--circled" type="button">
+          <svg class="button__icon" width="8" height="10" viewBox="0 0 8 10" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 1L6 5L2 9" stroke-width="2" />
+          </svg>
+        </button>
+      </div>
+      <!--endregion-->
+
+      <!--region feedback slider-->
+      <div class="feedback__slider">
+        <article class="card card--size--l">
+          <picture>
+            <source srcset="img/cards/people/saville.webp 1x,
+                          img/cards/people/saville@2x.webp 2x"
+                    type="image/webp">
+            <img class="card__photo"
+                 srcset="img/cards/people/saville.jpg 1x,
+                       img/cards/people/saville@2x.jpg 2x"
+                 src="img/cards/people/saville.jpg"
+                 alt="Google CEO">
+          </picture>
+          <div class="card__body">
+            <header class="card__header">
+              <h3 class="card__title">Louis Saville</h3>
+              <p class="card__subtitle">/CEO at Google inc</p>
+            </header>
+            <p class="card__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore
+              et dolore magna aliqua.
+            </p>
+          </div>
+        </article>
+
+        <article class="card card--size--l">
+          <picture>
+            <source srcset="img/cards/people/varadwaz.webp 1x,
+                          img/cards/people/varadwaz@2x.webp 2x"
+                    type="image/webp">
+            <img class="card__photo"
+                 srcset="img/cards/people/varadwaz.jpg 1x,
+                       img/cards/people/varadwaz@2x.jpg 2x"
+                 src="img/cards/people/varadwaz.jpg"
+                 alt="Manager Nike inc">
+          </picture>
+          <div class="card__body">
+            <header class="card__header">
+              <h3 class="card__title">Rekha Varadwaz</h3>
+              <p class="card__subtitle">/Manager at Nike inc</p>
+            </header>
+            <p class="card__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore
+              et dolore magna aliqua.
+            </p>
+          </div>
+        </article>
+
+      </div>
+      <!--endregion-->
+
+    </section>
+    <!--endregion-->
+
+    <!--region news-->
+    <div class="page__news">
+      <div class="page__news-inner">
+        <section class="news">
+          <header class="news__header">
+            <p class="subtitle news__subtitle">latest news</p>
+            <h2 class="title news__title">From Our Blog</h2>
+          </header>
+          <div class="news__body">
+            <article class="article news__article">
+              <picture>
+                <source srcset="img/articles/trends.webp 1x,
+          img/articles/trends@1.5x.webp 1.5x, img/articles/trends@2x.webp 2x"
+                        type="image/webp">
+                <img class="image--theme--secondary image--border--right article__image"
+                     srcset="img/articles/trends.jpg 1x,
+                img/articles/trends@1.5x.jpg 1.5x,
+                img/articles/trends@2x.jpg 2x"
+                     src="img/articles/trends.jpg"
+                     width="554"
+                     height="387"
+                     alt="Interior trends">
+              </picture>
+              <h3 class="article__header">2020 Interior Design Trends</h3>
+              <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                incididunt ut labore et dolore magna aliqua.</p>
+              <a href="" class="link link--theme--main link--size--l link--color--grass article__link">continue
+                reading....</a>
+            </article>
+            <article class="article news__article">
+              <picture>
+                <source srcset="img/articles/product_28.webp 1x,
+          img/articles/product_28@1.5x.webp 1.5x, img/articles/product_28@2x.webp 2x"
+                        type="image/webp">
+                <img class="image--theme--secondary image--border--right article__image"
+                     srcset="img/articles/product_28.jpg 1x,
+                img/articles/product_28@1.5x.jpg 1.5x,
+                img/articles/product_28@2x.jpg 2x"
+                     src="img/articles/product_28.jpg"
+                     width="554"
+                     height="387"
+                     alt="Interior trends">
+              </picture>
+              <h3 class="article__header">28 Notable Product at ARC Interior Design</h3>
+              <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                incididunt ut labore et dolore magna aliqua.</p>
+              <a href="" class="link link--theme--main link--size--l link--color--grass article__link">continue
+                reading....</a>
+            </article>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!--endregion-->
+
+    <section class="subscription page__subscription">
+      <h2 class="title subscription__title">don’t forget to sign up</h2>
+      <div class="subscription__line"></div>
+      <form class="form" method="post" onsubmit="return false">
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">
+            Find out early about all upcoming promotions and new product releases with
+            our newsletter.
+          </legend>
+          <label class="visually-hidden" for="email">Enter your email address to subscribe</label>
+          <div class="form__overflowing-group">
+            <input class="form__overflowing-input" name="email" id="email" type="email"
+                   placeholder="Enter your email address.....">
+            <button class="form__overflowing-submit" type="submit">subscribe</button>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+  </div>
+</main>
+<!--endregion-->
+
+<div class="hidden">
+  <!--region footer-->
+  <div class="page__footer">
+    <div class="page__footer-inner">
+      <footer class="footer">
+        <div class="footer__slogan">
+          <!--region logo-->
+          <a href="#">
+            <picture>
+              <source srcset="img/logo/logo.webp 1x,
+       img/logo/logo@1.5x.webp 1.5x, img/logo/logo@2x.webp 2x"
+                      type="image/webp">
+              <img class="footer__logo"
+                   src="img/logo/logo.png"
+                   srcset="img/logo/logo.png 1x, img/logo/logo@1.5x.png 1.5x,
+          img/logo/logo@2x.png 2x"
+                   alt="logo" width="151" height="47">
+            </picture>
+          </a>
+          <!--endregion-->
+          <p class="footer__slogan-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium.</p>
+        </div>
+        <nav class="footer__navigation">
+          <ul class="footer__linkboxes">
+            <li class="footer__linkbox">
+              <h3 class="footer__linkbox-heading">Quick Links</h3>
+              <ul class="footer__linkbox-list">
+                <li><a class="link footer__linkbox-link" href="#">About Our Company</a></li>
+                <li><a class="link footer__linkbox-link" href="#">Services we provide</a></li>
+                <li><a class="link footer__linkbox-link" href="#">Career & Opportunity</a></li>
+                <li><a class="link footer__linkbox-link" href="#">Privacy & policy</a></li>
+                <li><a class="link footer__linkbox-link" href="#">Contact US</a></li>
+              </ul>
+            </li>
+            <li class="footer__linkbox">
+              <h3 class="footer__linkbox-heading">Company</h3>
+              <ul class="footer__linkbox-list">
+                <li><a class="link footer__linkbox-link" href="#">About Company</a></li>
+                <li><a class="link footer__linkbox-link" href="#">Our Testimonials</a></li>
+                <li><a class="link footer__linkbox-link" href="#">Latest News</a></li>
+                <li><a class="link footer__linkbox-link" href="#">Our mission</a></li>
+                <li><a class="link footer__linkbox-link" href="#">Get a free Quot</a></li>
+              </ul>
+            </li>
+            <li class="footer__linkbox">
+              <h3 class="footer__linkbox-heading">Contact us</h3>
+              <address class="footer__address">
+                <ul class="footer__linkbox-list">
+                  <li><p class="footer__location">Sagrada Familia, Herba Street Front USA</p></li>
+                  <li><a class="link footer__linkbox-link" href="mailto:brandoxide@gmail.com">brandoxide@gmail.com</a>
+                  </li>
+                  <li><a class="link footer__linkbox-link" href="tel:002-568423591">002-568423591</a></li>
+                </ul>
+              </address>
+            </li>
+          </ul>
+        </nav>
+        <ul class="footer__social">
+          <li>
+            <a href="#">
+              <img src="img/social/twitter.png" width="37" height="37" alt="facebook">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/social/twitter.png" width="37" height="37" alt="facebook">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/social/twitter.png" width="37" height="37" alt="facebook">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/social/twitter.png" width="37" height="37" alt="facebook">
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </div>
+  <!-- endregion-->
+
+  <!--region copyright-->
+  <footer class="copyright copyright--overline">
+    <p class="copyright__paragraph"><small class="copyright__text">&copy; 2021 Brandoxide. All rights reserved.</small>
+    </p>
+  </footer>
+  <!--endregion-->
+</div>
+
+<!--region scripts-->
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<!--endregion-->
 </body>
-
+<!--endregion-->
 </html>
